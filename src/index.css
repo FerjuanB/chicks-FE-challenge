@@ -1,0 +1,19 @@
+
+html {
+  font-size: 62.5%; /** 1REM = 10pX **/
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+body {
+  font-family: "Roboto",sans-serif;
+  background-image: url(/public/default.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+height: 98vh;
+}
+
