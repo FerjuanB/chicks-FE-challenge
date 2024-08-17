@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { NavRefs } from "./NavComponents/NavRefs"
+import { Button } from './NavComponents/Button';
 
 export const NavBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -19,10 +20,15 @@ export const NavBar = () => {
         <NavRefs value="services"/>
         <NavRefs value="swap"/>
         <NavRefs value="sell"/>
+        <div className={`nav-links-div ${isMenuOpen ? 'show' : ''}`}>
+        <NavRefs value="USD"/>
+        <Button/>
+        </div>
       </section>
-      {/* <section className={` nav-right-links ${isMenuOpen ? 'show' : ''}`}>
+      <section className={` nav-right-links ${isMenuOpen ? 'show' : ''}`}>
         <NavRefs value="USD "/>
-      </section> */}
+        <Button/>
+      </section>
     </nav>  
   )
 }
